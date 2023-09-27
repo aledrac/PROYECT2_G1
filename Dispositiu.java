@@ -6,7 +6,7 @@ package proyecto2mobilewolrd;
 
 /**
  *
- * @author Gerard
+ * @author Joan
  */
 public abstract class Dispositiu {
     private String marca;
