@@ -1,23 +1,35 @@
-package proyecto2mobilewolrd;
+package ticactividades.practica2proyectos;
 
 public class Smartphone extends Dispositiu {
-    private String sistemaOperatiu;
-    private boolean acceleròmetre;
+    private String so;
+    private boolean accelerometre;
     private boolean gps;
 
-    public Smartphone(String marca, String model, double preuBase, String sistemaOperatiu, boolean acceleròmetre , boolean gps) {
+    public Smartphone(String so, boolean accelerometre, boolean gps, String marca, String model, double preuBase) {
         super(marca, model, preuBase);
-        this.sistemaOperatiu = sistemaOperatiu;
-        this.acceleròmetre = acceleròmetre;
+        this.so = so;
+        this.accelerometre = accelerometre;
         this.gps = gps;
     }
 
-    public boolean isAcceleròmetre() {
-        return acceleròmetre;
+    public Smartphone(String so, String marca, String model, double preuBase) {
+        this(so, false, true, marca, model, preuBase);
     }
 
-    public void setAcceleròmetre(boolean acceleròmetre) {
-        this.acceleròmetre = acceleròmetre;
+    public String getSo() {
+        return so;
+    }
+
+    public void setSo(String so) {
+        this.so = so;
+    }
+
+    public boolean isAccelerometre() {
+        return accelerometre;
+    }
+
+    public void setAccelerometre(boolean accelerometre) {
+        this.accelerometre = accelerometre;
     }
 
     public boolean isGps() {
@@ -27,19 +39,30 @@ public class Smartphone extends Dispositiu {
     public void setGps(boolean gps) {
         this.gps = gps;
     }
-    
-    public String getSistemaOperatiu() {
-        return sistemaOperatiu;
-    }
-
-    public void setSistemaOperatiu(String sistemaOperatiu) {
-        this.sistemaOperatiu = sistemaOperatiu;
-    }
 
     @Override
     public String toString() {
-        return super.toString() + "sistemaOperatiu=" + sistemaOperatiu + ", acceler\u00f2metre=" + acceleròmetre + ", gps=" + gps + '}';
+        return "Smartphone{" +
+                "so='" + so + '\'' +
+                ", accelerometre=" + accelerometre +
+                ", gps=" + gps +
+                "} " + super.toString();
     }
 
-    
+    @Override
+    public double preuFinal() {
+        double preuBase = getPreuBase();
+        if (this.isAccelerometre()) {
+            preuBase *= 1.10;
+            if (isGps()) {
+                preuBase *= 1.05;
+            }
+        }
+        return 2 * preuBase;
+    }
+
+    @Override
+    public boolean isGammaAlta() {
+        return this.preuFinal() > 700;
+    }
 }
