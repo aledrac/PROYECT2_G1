@@ -1,6 +1,6 @@
 package ticactividades.practica2proyectos;
 
-public class Smartphone extends Dispositiu {
+public class Smartphone extends Dispositiu implements GammaAlta{
     private String so;
     private boolean accelerometre;
     private boolean gps;
@@ -49,7 +49,6 @@ public class Smartphone extends Dispositiu {
                 "} " + super.toString();
     }
 
-    @Override
     public double preuFinal() {
         double preuBase = getPreuBase();
         if (this.isAccelerometre()) {

@@ -8,7 +8,7 @@ package proyecto2mobilewolrd;
  *
  * @author Joan
  */
-public class Tablet extends Dispositiu {
+public class Tablet extends Dispositiu implements GammaAlta{
     private double polsades;
     
     public Tablet(double polsades, String marca, String model, double preuBase) {
@@ -27,6 +27,18 @@ public class Tablet extends Dispositiu {
     @Override
     public String toString() {
         return super.toString() + " polsades=" + polsades + '}';
+    }
+    @Override
+    public double precioFinal() {
+        if(polsades >= 10){
+            return super.precioFinal() * 1.10;
+        }
+        return super.precioFinal();
+    }
+
+    @Override
+    public boolean isGammaAlta() {
+        return precioFinal() > 900;
     }
     
 }

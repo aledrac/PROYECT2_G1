@@ -5,7 +5,6 @@ package proyecto2mobilewolrd;
  * @author Joan
  */
 public abstract class Dispositiu {
-
     private String marca;
     private String model;
     private double preuBase;
@@ -40,12 +39,13 @@ public abstract class Dispositiu {
         this.preuBase = preuBase;
     }
 
-    public double preuFinal() {
-        return preuBase * 2;
-    }
-
     @Override
     public String toString() {
         return "Dispositiu{" + "marca=" + marca + ", model=" + model + ", preuBase=" + preuBase + '}';
     }
+    
+    public double precioFinal() {
+        double precio = preuBase * 2;
+        return precio;
+    }  
 }
