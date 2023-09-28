@@ -27,4 +27,13 @@ public class AltresDispositius extends Dispositiu {
     public String toString() {
         return super.toString() + " descripcioDispositiu=" + descripcioDispositiu + '}';
     }
+
+    @Override
+    public double precioFinal() {
+        if(descripcioDispositiu.contains("inteligente")){
+            return super.precioFinal() * 1.10;
+        }
+        return super.precioFinal();
+    }
+    
 }
