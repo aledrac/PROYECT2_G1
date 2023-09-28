@@ -1,4 +1,3 @@
-
 package proyecto2mobilewolrd;
 
 /**
@@ -6,6 +5,7 @@ package proyecto2mobilewolrd;
  * @author Joan
  */
 public abstract class Dispositiu {
+
     private String marca;
     private String model;
     private double preuBase;
@@ -38,6 +38,10 @@ public abstract class Dispositiu {
 
     public void setPreuBase(double preuBase) {
         this.preuBase = preuBase;
+    }
+
+    public double preuFinal() {
+        return preuBase * 2;
     }
 
     @Override
