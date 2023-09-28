@@ -4,6 +4,8 @@
  */
 package proyecto2mobilewolrd;
 
+import proyecto2mobilewolrd.Activitat2.AltresDispositius;
+
 /**
  *
  * @author Sebastian
@@ -12,8 +14,8 @@ public class APP {
     public static void main(String[] args) {
         Dispositiu[] dis = new Dispositiu[5];
         dis[0] = new AltresDispositius("Reloj inteligente","Apple", "SE", 100);
-        dis[1] = new Smartphones("Samsung", "S10", 300,"android", false, true);
-        dis[2] = new Smartphones("Apple", "iPhone 11", 500, "IOS", true, true);
+        dis[1] = new Smartphone("Samsung", "S10", 300,"android", false, true);
+        dis[2] = new Smartphone("Apple", "iPhone 11", 500, "IOS", true, true);
         dis[3] = new Tablet(12, "Samsung", "Galaxi Tab", 400);
         dis[4] = new Tablet(10, "Apple", "iPad Air", 600);
 //        for(int i = 0; i < dis.length; i++){

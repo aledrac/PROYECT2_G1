@@ -44,6 +44,4 @@ public abstract class Dispositiu {
     public String toString() {
         return "Dispositiu{" + "marca=" + marca + ", model=" + model + ", preuBase=" + preuBase + '}';
     }
-    
-    
 }

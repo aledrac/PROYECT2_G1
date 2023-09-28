@@ -26,7 +26,7 @@ public class Tablet extends Dispositiu {
 
     @Override
     public String toString() {
-        return "Tablet{" + "polsades=" + polsades + '}';
+        return super.toString() + " polsades=" + polsades + '}';
     }
     
 }
