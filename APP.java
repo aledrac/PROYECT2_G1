@@ -4,8 +4,6 @@
  */
 package proyecto2mobilewolrd;
 
-import proyecto2mobilewolrd.Activitat2.AltresDispositius;
-
 /**
  *
  * @author Sebastian
