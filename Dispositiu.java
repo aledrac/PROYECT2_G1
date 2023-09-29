@@ -27,7 +27,7 @@ public abstract class Dispositiu {
         return preuBase;
     }
 
-    public void setMarca(String marca) {
+    public void setMarca(String marca) { 
         this.marca = marca;
     }
 

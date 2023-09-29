@@ -8,7 +8,7 @@ public class Smartphone extends Dispositiu implements GammaAlta{
     public Smartphone(String so, boolean accelerometre, boolean gps, String marca, String model, double preuBase) {
         super(marca, model, preuBase);
         this.so = so;
-        this.accelerometre = accelerometre;
+        this.accelerometre = accelerometre; 
         this.gps = gps;
     }
 

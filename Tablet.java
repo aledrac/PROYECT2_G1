@@ -8,7 +8,7 @@ package proyecto2mobilewolrd;
  *
  * @author Joan
  */
-public class Tablet extends Dispositiu implements GammaAlta{
+public class Tablet extends Dispositiu implements GammaAlta{ 
     private double polsades;
     
     public Tablet(double polsades, String marca, String model, double preuBase) {
