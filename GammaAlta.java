@@ -7,7 +7,7 @@ package com.mycompany.projectos;
 /**
  *
  * @author Antho
- */
+ */ 
 public interface GammaAlta {
     public boolean isGammaAlta();
 }

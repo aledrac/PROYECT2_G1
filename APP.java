@@ -9,7 +9,7 @@ package proyecto2mobilewolrd;
  * @author Sebastian
  */
 
-public class APP {
+public class APP { 
     public static void main(String[] args) {
         Dispositiu[] dis = new Dispositiu[5];
         dis[0] = new AltresDispositius("Reloj inteligente","Apple", "SE", 100);
