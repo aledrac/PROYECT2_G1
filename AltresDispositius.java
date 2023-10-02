@@ -7,7 +7,7 @@ package proyecto2mobilewolrd;
  *
  * @author aleix
  */
-public class AltresDispositius extends Dispositiu { 
+public class AltresDispositius extends Dispositiu {
     private String descripcioDispositiu;
     
     public AltresDispositius(String descripcioDispositiu, String marca, String model, double preuBase) {
@@ -25,7 +25,7 @@ public class AltresDispositius extends Dispositiu {
 
     @Override
     public String toString() {
-        return super.toString() + " descripcioDispositiu=" + descripcioDispositiu + '}';
+        return "AltresDispositius{ " + super.toString() + " descripcioDispositiu=" + descripcioDispositiu + '}';
     }
 
     @Override

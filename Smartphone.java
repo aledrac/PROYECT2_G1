@@ -42,11 +42,7 @@ public class Smartphone extends Dispositiu implements GammaAlta{
 
     @Override
     public String toString() {
-        return "Smartphone{" +
-                "so='" + so + '\'' +
-                ", accelerometre=" + accelerometre +
-                ", gps=" + gps +
-                "} " + super.toString();
+        return "Smartphone{ " + super.toString() + "so=" + so + ", accelerometre=" + accelerometre + ", gps=" + gps + '}';
     }
 
     public double preuFinal() {

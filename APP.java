@@ -9,7 +9,7 @@ package proyecto2mobilewolrd;
  * @author Sebastian
  */
 
-public class APP { 
+public class APP {
     public static void main(String[] args) {
         Dispositiu[] dis = new Dispositiu[5];
         dis[0] = new AltresDispositius("Reloj inteligente","Apple", "SE", 100);
@@ -19,10 +19,12 @@ public class APP {
         dis[4] = new Tablet(10, "Apple", "iPad Air", 600);
         for (Dispositiu di : dis) {
             System.out.println(di.toString());
-            System.out.println(di.precioFinal());
+            System.out.println("Preu base: " + di.getPreuBase());
+            System.out.println("Preu final: " + Math.round(di.precioFinal()));
             if(di instanceof GammaAlta){
-                System.out.println("Gamma alta " + ((GammaAlta)di).isGammaAlta());
+                System.out.println("Gamma alta: " + ((GammaAlta)di).isGammaAlta());
             }
         }
+
     }
 }
